@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechin Ip Info</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+</head>
+<body>
+    <main class="container">
+        <form id="form">
+            <label>
+            IP del usuario
+            <input required id="input" type="text" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" placeholder="Introduce aqui la IP">
+            <small>Por ejemplo: 172.66.41.24</small>
+            </label>
+
+            <button type="submit" id="submit">
+                Buscar Información de esta IP
+            </button> 
+
+        </form>
+
+        <div>
+            <pre id="results">
+
+            </pre>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
